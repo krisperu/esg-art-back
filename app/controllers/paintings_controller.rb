@@ -1,5 +1,5 @@
 class PaintingsController < ApplicationController
-    skip_before_action :authorize, only: [:index, :show]
+    skip_before_action :authorize, only: [:index, :show, :create]
     before_action :find_painting, only: [:show, :update, :destroy]
     
     def index
@@ -32,6 +32,6 @@ class PaintingsController < ApplicationController
     end
 
     def painting_params
-        params.permit(:id, :img, :title, :price, :desc, :sold)
+        params.permit(:id, :img, :title, :price, :desc, :specs, :sold)
     end
 end

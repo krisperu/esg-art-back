@@ -4,6 +4,7 @@ one:
   img: MyString
   title: MyString
   price: 1
+  specs: MyString
   desc: MyString
   sold: false
 
@@ -11,5 +12,6 @@ two:
   img: MyString
   title: MyString
   price: 1
+  specs: MyString
   desc: MyString
   sold: false

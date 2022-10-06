@@ -4,8 +4,9 @@ class CreatePaintings < ActiveRecord::Migration[7.0]
       t.string :img
       t.string :title
       t.integer :price
+      t.string :specs
       t.string :desc
-      t.boolean :sold, :default => false
+      t.boolean :sold
 
       t.timestamps
     end

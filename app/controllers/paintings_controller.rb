@@ -1,5 +1,5 @@
 class PaintingsController < ApplicationController
-    skip_before_action :authorize, only: [:index, :show, :create]
+    skip_before_action :authorize, only: [:index, :show, :create, :update]
     before_action :find_painting, only: [:show, :update, :destroy]
     
     def index
